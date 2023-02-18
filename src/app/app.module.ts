@@ -8,6 +8,7 @@ import { HomeSlideComponent } from './home-slide/home-slide.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     HomeSlideComponent,
     NoticiasComponent,
     HistoriaComponent,
-    ContactoComponent
+    ContactoComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule
