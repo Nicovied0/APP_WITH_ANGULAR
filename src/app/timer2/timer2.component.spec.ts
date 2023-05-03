@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactoComponent } from './contacto.component';
+import { Timer2Component } from './timer2.component';
 
-describe('ContactoComponent', () => {
-  let component: ContactoComponent;
-  let fixture: ComponentFixture<ContactoComponent>;
+describe('Timer2Component', () => {
+  let component: Timer2Component;
+  let fixture: ComponentFixture<Timer2Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactoComponent ]
+      declarations: [ Timer2Component ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ContactoComponent);
+    fixture = TestBed.createComponent(Timer2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

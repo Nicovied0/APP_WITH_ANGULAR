@@ -1,25 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeSlideComponent } from './home-slide/home-slide.component';
-import { NoticiasComponent } from './noticias/noticias.component';
-import { HistoriaComponent } from './historia/historia.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { MapComponent } from './map/map.component';
-
+import { TimerComponent } from './timer/timer.component';
+import { Timer2Component } from './timer2/timer2.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
     FooterComponent,
-    HomeSlideComponent,
-    NoticiasComponent,
-    HistoriaComponent,
-    ContactoComponent,
-    MapComponent
+    TimerComponent,
+    Timer2Component,
   ],
   imports: [
     BrowserModule
