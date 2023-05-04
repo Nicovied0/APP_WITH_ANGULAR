@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-timer',
   templateUrl: './timer.component.html',
@@ -12,13 +12,14 @@ export class TimerComponent implements OnInit {
   public seconds: number = 0;
   private timer: any;
   private date = new Date();
-  
+
   public show: boolean = true;
   public disabled: boolean = false;
   public animate: boolean = false;
+  public disabledRecess: boolean = false;
   @ViewChild("idAudio") idAudio: ElementRef = undefined!;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -52,15 +53,8 @@ export class TimerComponent implements OnInit {
       this.seconds -= 1;
     }
   }
-  
-  /* getValues() {
-    this.date.setHours(this.hours);
-    this.date.setMinutes(this.minutes);
-    this.date.setSeconds(this.seconds);
-    this.date.setMilliseconds(0);     //init value 0
-    //console.log(this.date.getTime())
-  }
- */
+
+
   updateTimer() {
     this.date.setHours(this.hours);
     this.date.setMinutes(this.minutes);
@@ -79,11 +73,17 @@ export class TimerComponent implements OnInit {
       //stop interval
       clearInterval(this.timer);
       this.idAudio.nativeElement.play();
+      this.disabledRecess = true
       this.animate = true;
+
+
       setTimeout(() => {
         this.stop();
         this.idAudio.nativeElement.load();
       }, 5000);
+      setTimeout(() => {
+        this.router.navigate(['/recess']);
+      }, 5500);
 
     }
   }
@@ -95,18 +95,19 @@ export class TimerComponent implements OnInit {
       this.show = false;  //hide btn + and -
       this.updateTimer();
 
-      if(this.seconds > 0){
+      if (this.seconds > 0) {
         this.timer = setInterval(() => {
           this.updateTimer();
         }, 1000);
-      }     
+      }
     }
   }
 
-  stop() {    
+  stop() {
     this.disabled = false;
     this.show = true;
     this.animate = false;
+    this.disabledRecess = false
     clearInterval(this.timer);
     this.idAudio.nativeElement.load();
   }
