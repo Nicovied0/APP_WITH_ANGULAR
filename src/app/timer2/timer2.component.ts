@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-timer2',
   templateUrl: './timer2.component.html',
@@ -17,7 +17,7 @@ export class Timer2Component {
   public animate: boolean = false;
   @ViewChild("idAudio") idAudio: ElementRef = undefined!;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -83,6 +83,9 @@ export class Timer2Component {
         this.stop();
         this.idAudio.nativeElement.load();
       }, 5000);
+      setTimeout(() => {
+        this.router.navigate(['/']);
+      }, 5500);
 
     }
   }
