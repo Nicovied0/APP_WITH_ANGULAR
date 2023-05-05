@@ -87,7 +87,9 @@ export class TimerComponent implements OnInit {
 
     }
   }
-
+goDetails(){
+  this.router.navigate(['/details'])
+}
   start() {
     if (this.hours > 0 || this.minutes > 0 || this.seconds > 0) {
 

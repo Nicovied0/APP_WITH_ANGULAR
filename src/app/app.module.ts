@@ -4,17 +4,17 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { TimerComponent } from './timer/timer.component';
 import { Timer2Component } from './timer2/timer2.component';
-import { ButtonActiveComponent } from './button-active/button-active.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TitleAndNavComponent } from './title-and-nav/title-and-nav.component';
+import { LoreComponent } from './lore/lore.component';
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     TimerComponent,
     Timer2Component,
-    ButtonActiveComponent,
     TitleAndNavComponent,
+    LoreComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,5 +24,5 @@ import { TitleAndNavComponent } from './title-and-nav/title-and-nav.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  
+
 }

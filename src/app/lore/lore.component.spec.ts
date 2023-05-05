@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ButtonActiveComponent } from './button-active.component';
+import { LoreComponent } from './lore.component';
 
-describe('ButtonActiveComponent', () => {
-  let component: ButtonActiveComponent;
-  let fixture: ComponentFixture<ButtonActiveComponent>;
+describe('LoreComponent', () => {
+  let component: LoreComponent;
+  let fixture: ComponentFixture<LoreComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ButtonActiveComponent ]
+      declarations: [ LoreComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ButtonActiveComponent);
+    fixture = TestBed.createComponent(LoreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
