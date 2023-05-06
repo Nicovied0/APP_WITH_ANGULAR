@@ -3,21 +3,27 @@
     <div class="containerDiv">
       <div class="flex">
         <div class="divButon">
-          <div class="time">{{ hours | number : "2.0" }} <span class="detailtex">h</span></div>
+          <div class="time">
+            {{ hours | number : "2.0" }} <span class="detailtex">h</span>
+          </div>
           <div *ngIf="show">
             <button class="butons" (click)="increment('H')">+</button>
             <button class="butons" (click)="decrement('H')">-</button>
           </div>
         </div>
         <div class="divButon">
-          <div class="time">{{ minutes | number : "2.0" }} <span class="detailtex">m</span></div>
+          <div class="time">
+            {{ minutes | number : "2.0" }} <span class="detailtex">m</span>
+          </div>
           <div class="content-btn" *ngIf="show">
             <button class="butons" (click)="increment('M')">+</button>
             <button class="butons" (click)="decrement('M')">-</button>
           </div>
         </div>
         <div class="divButon">
-          <div class="time">{{ seconds | number : "2.0" }} <span class="detailtex">s</span></div>
+          <div class="time">
+            {{ seconds | number : "2.0" }} <span class="detailtex">s</span>
+          </div>
           <div class="content-btn" *ngIf="show">
             <button class="butons" (click)="increment('S')">+</button>
             <button class="butons" (click)="decrement('S')">-</button>

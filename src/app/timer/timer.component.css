@@ -12,7 +12,7 @@
 }
 
 .detailtex {
-  color: #4e4e4e;
+  color: royalblue;
   font-weight: 600;
 }
 
@@ -26,6 +26,11 @@
   border-radius: 2rem;
   height: 13rem;
   border: 2px solid gray;
+}
+
+.buttonDetails {
+  color: royalblue;
+  font-weight: 500;
 }
 
 .divText {
