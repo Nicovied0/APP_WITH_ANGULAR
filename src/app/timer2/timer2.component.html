@@ -47,7 +47,17 @@
     </div>
   </div>
 </div>
-
+<div *ngIf="modal" class="modal">
+  <div class="modal2">
+    <h2 class="modalh2">Continuar con el proximo bloque</h2>
+    <div class="divmodal">
+      <h2 class="modalh2" *ngIf="hours">{{ hours }} h</h2>
+      <h2 class="modalh2" *ngIf="minutes">{{ minutes }}m</h2>
+      <h2 class="modalh2" *ngIf="seconds">{{ seconds }}s</h2>
+    </div>
+    <button class="buttonModal" (click)="setBloque2()">Continuar</button>
+  </div>
+</div>
 <audio #idAudio controls class="dnone">
   <source type="audio/wav" src="../../assets/alarm.mp3" />
 </audio>

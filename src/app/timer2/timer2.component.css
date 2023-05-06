@@ -68,7 +68,61 @@
   font-size: x-large;
   padding: 0 1rem;
 }
-.detailtex{
+
+.detailtex {
   color: #4e4e4e;
   font-weight: 600;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 10;
+  background-color: #121111fa;
+  right: 0;
+  margin: auto;
+  font-size: 1.5em;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal2 {
+  height: 15rem;
+  background: white !important;
+  /* width: 60%; */
+  display: flex;
+  margin: auto;
+  width: 70%;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modalh2 {
+  color: black;
+  padding: 0.2rem;
+}
+
+.divmodal {
+  display: flex;
+}
+
+.buttonModal {
+  color: white;
+  background-color: royalblue;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.buttonModal:hover {
+  background-color: #2251dd;
+  border: 1px solid black;
 }

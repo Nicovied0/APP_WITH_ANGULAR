@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./timer2.component.css']
 })
 export class Timer2Component {
+  public modal: boolean = false
   public hours: number = 0;
   public minutes: number = 5;
   public seconds: number = 0;
@@ -84,7 +85,8 @@ export class Timer2Component {
         this.idAudio.nativeElement.load();
       }, 5000);
       setTimeout(() => {
-        this.router.navigate(['/']);
+        this.modal = true
+       
       }, 5500);
 
     }
@@ -118,6 +120,13 @@ export class Timer2Component {
     this.minutes = 0;
     this.seconds = 0;
     this.stop();
+  }
+
+  setBloque2() {
+    this.router.navigate(['/']);
+    this.modal = false
+   
+    
   }
 
 }
