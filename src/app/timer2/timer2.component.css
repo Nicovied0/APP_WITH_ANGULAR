@@ -1,3 +1,74 @@
 .dnone {
   display: none;
 }
+
+.containerTimer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  justify-content: space-evenly;
+  margin: 2rem 0 3rem;
+}
+
+.containerDiv {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 24rem;
+  border-radius: 2rem;
+  height: 13rem;
+  border: 2px solid gray;
+}
+
+.divText {
+  width: 25rem;
+  margin-bottom: 3rem;
+}
+
+.divtextdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.butons {
+  padding: 0 0.7rem;
+  font-size: 1.7rem;
+  margin: 0.2rem;
+  background: linear-gradient(45deg, black, transparent);
+
+}
+
+.time {
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+
+.divButon {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.divButon2 {
+  width: 14rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.button2 {
+  font-size: x-large;
+  padding: 0 1rem;
+}
+.detailtex{
+  color: #4e4e4e;
+  font-weight: 600;
+}
