@@ -4,3 +4,8 @@
 .footer{
   background: #1a1a1a;
 }
+
+.img:hover {
+  background-color: royalblue;
+  border-radius: 100%;
+}
