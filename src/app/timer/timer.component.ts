@@ -12,6 +12,7 @@ export class TimerComponent implements OnInit {
   public seconds: number = 0;
   private timer: any;
   private date = new Date();
+  public playShow: boolean = true
 
   public show: boolean = true;
   public disabled: boolean = false;
@@ -87,15 +88,16 @@ export class TimerComponent implements OnInit {
 
     }
   }
-goDetails(){
-  this.router.navigate(['/details'])
-}
+  goDetails() {
+    this.router.navigate(['/details'])
+  }
   start() {
     if (this.hours > 0 || this.minutes > 0 || this.seconds > 0) {
 
       this.disabled = true;
       this.show = false;  //hide btn + and -
       this.updateTimer();
+      this.playShow = false
 
       if (this.seconds > 0) {
         this.timer = setInterval(() => {
@@ -106,6 +108,7 @@ goDetails(){
   }
 
   stop() {
+    this.playShow = true
     this.disabled = false;
     this.show = true;
     this.animate = false;

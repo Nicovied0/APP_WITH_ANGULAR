@@ -120,9 +120,14 @@
   background-color: royalblue;
   padding: 1rem;
   border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 .buttonModal:hover {
   background-color: #2251dd;
   border: 1px solid black;
+}
+.detailtex {
+  color: royalblue;
+  font-weight: 600;
 }

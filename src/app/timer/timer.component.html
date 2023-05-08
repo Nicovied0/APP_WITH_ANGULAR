@@ -36,6 +36,7 @@
           class="button2 buttonPlay"
           (click)="start()"
           [disabled]="disabled"
+          *ngIf="playShow"
         >
           &#9658;
         </button>
