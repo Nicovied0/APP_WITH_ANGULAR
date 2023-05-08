@@ -31,7 +31,6 @@
         </div>
       </div>
       <div class="divButon2">
-        
         <button
           type="button"
           class="button2 buttonPlay"
@@ -63,3 +62,9 @@
 <audio #idAudio controls class="dnone">
   <source type="audio/wav" src="../../assets/alarm.mp3" />
 </audio>
+
+<div *ngIf="!playShow" class="divModal2">
+  <div class="divModal3">
+    <h2>Tomémonos un breve receso!!</h2>
+  </div>
+</div>
